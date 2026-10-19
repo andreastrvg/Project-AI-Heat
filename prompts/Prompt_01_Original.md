@@ -15,7 +15,7 @@ Solve Problem 5-37 from the heat conduction problem bank.
 
 Problem Description:
 
-A large aluminum plate has a thickness of 5 cm and a thermal conductivity of 34 W/(m·K). Heat is generated uniformly inside the plate at a constant rate of 6 × 10^5 W/m³. One surface of the plate is perfectly insulated, while the opposite surface is exposed to convection with an ambient temperature of 30°C and a heat transfer coefficient of 60 W/(m²·K).
+A large uranium plate has a thickness of 5 cm and a thermal conductivity of 34 W/(m·K). Heat is generated uniformly inside the plate at a constant rate of 6 × 10^5 W/m³. One surface of the plate is perfectly insulated, while the opposite surface is exposed to convection with an ambient temperature of 30°C and a heat transfer coefficient of 60 W/(m²·K).
 
 Divide the plate into five equal intervals of 1 cm, resulting in six nodes.
 
