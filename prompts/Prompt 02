@@ -1,0 +1,50 @@
+Act as an entry-level thermal engineer specializing in numerical heat transfer, heat conduction with internal heat generation, and finite difference methods.
+Solve Problem 5-37 from the heat conduction problem bank.
+Problem Description:
+A large uranium plate has a thickness of 5 cm and a thermal conductivity of 34 W/(m·K). Heat is generated uniformly inside the plate at a constant rate of 6 × 10^5 W/m³. One surface of the plate is perfectly insulated, while the opposite surface is exposed to convection with an ambient temperature of 30°C and a heat transfer coefficient of 60 W/(m²·K).
+Divide the plate into five equal intervals of 1 cm, resulting in six nodes.
+Engineering Tasks:
+Part I. Original Steady-State Problem
+1. Identify all physical assumptions.
+2. Derive the governing one-dimensional steady-state heat conduction equation with internal heat generation.
+3. Define the insulated and convective boundary conditions.
+4. Derive the finite difference equations for all six nodes using energy balances (numerical method).
+5. Construct the complete system of six linear algebraic equations.
+6. Solve for the temperature at each node.
+7. Identify the maximum and minimum temperatures.
+8. Verify the numerical results using the analytical steady-state solution.
+9. Verify energy conservation and units.
+10. Explain the physical meaning of the temperature distribution.
+11. Identify possible numerical or mathematical errors.
+12. Present all results in a clear table.
+
+Part II. Transient Numerical Analysis of the Original Problem
+1. Extend the original problem from steady-state to transient heat conduction using the finite difference method (numerical method).
+2. Identify the additional data required for the transient analysis, including:
+- Uranium density, (\rho), in kg/m³.
+- Specific heat capacity, (c_p), in J/(kg·K).
+- Initial temperature distribution, (T(x,0)).
+- Time-step size, (\Delta t).
+- Total simulation time and the temperature target used for comparison
+1. Do not invent missing material properties or initial conditions. If they are not provided, identify them explicitly and request the required values. If illustrative assumptions are necessary, label them clearly and justify them using reliable references.
+2. Derive the transient heat conduction equation with uniform internal heat generation. Assume constant thermal properties unless otherwise justified.
+3. Derive the explicit finite difference equation for each interior node. Define the Fourier number and thermal diffusivity:
+4. Derive the appropriate transient finite difference equations for both boundary nodes: insulated boundary at (x=0) and convective boundary at (x=L).
+Use energy balances and consistent finite difference formulation. Do not apply the interior-node equation directly at a boundary without deriving the appropriate boundary equation.
+5. Evaluate the Fourier number and verify the stability criterion for the selected explicit time step. Check the convective-boundary stability restriction as well. If the selected time step is unstable, reduce it or use a suitable alternative numerical method.
+6. Starting from the specified initial condition, calculate the temperatures of all six nodes at successive time steps until the plate reaches a defined target temperature or approaches steady state within a stated numerical tolerance. Explain the stopping condition used.
+7. Present a temperature-versus-time table for selected nodes, including the insulated surface, an interior node, and the convective surface.
+8. Verify that the transient solution approaches the previously calculated steady-state temperature distribution as time increases, provided the model and boundary conditions are unchanged.
+9. Perform a transient energy balance to verify that energy accumulation is consistent with internal heat generation and convective heat loss.
+
+Engineering Requirements:
+
+
+- Use SI units.
+- Show all equations and intermediate calculations.
+- Explain the physical principles behind each step.
+- Do not assume numerical results are correct without verification.
+- Clearly distinguish steady-state and transient heat transfer.
+- Do not calculate cooling time using steady-state equations.
+Expected Output:
+A complete engineering solution including assumptions, governing equations, boundary conditions, finite difference equations, numerical results, analytical verification, energy balance, and engineering conclusions. 
