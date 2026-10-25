@@ -34,10 +34,10 @@ Divide the plate into five equal intervals of 1 cm, resulting in six nodes.
 5. Derive the transient heat conduction equation with uniform internal heat generation. Assume constant thermal properties unless otherwise justified.
 6. Derive the explicit finite difference equations for the interior nodes and both boundary nodes using consistent control-volume energy balances.
 7. Calculate thermal diffusivity, Fourier number, and Biot number. Select a stable time step and verify both interior-node and convective-boundary stability restrictions.
-8. Calculate the temperatures of all six nodes at successive time steps.
+8. Calculate the temperatures of all six nodes at successive time steps. Show calculation example and all results.
 9. Use a volume-average plate temperature of (100^\circ C) as a comparison target for the transient simulations. Clearly state that this is an added benchmark to compare transient and , not a temperature specified by the textbook or the target final temperature.
-10. Calculate the time required for the original system, with (q'''=600{,}000) W/m³ throughout, to reach an average temperature of (100^\circ C). Show the nodal temperatures and average temperature near the target-crossing time.
-11. Verify that the transient solution approaches the original analytical steady-state temperature profile. Define convergence as a maximum absolute nodal error of (1.0^\circ C) or less relative to the analytical steady-state temperatures.
+10. Calculate the time required for the original system, with (q'''=600{,}000) W/m³ throughout, to reach an average temperature of (100^\circ C). Show the nodal temperatures and average temperature near the target-crossing time. Show calculations.
+11. Verify that the transient solution approaches the original analytical steady-state temperature profile. Define convergence as a maximum absolute nodal error of (1.0^\circ C) or less relative to the analytical steady-state temperatures. Show calculations.
 12. Perform a transient energy balance comparing stored energy with internal heat generation minus convective heat loss.
     
 ### Part III. Engineering Adaptation for Faster Heating
@@ -53,9 +53,9 @@ T_{\mathrm{avg}}=
 \frac{0.5T_0+T_1+T_2+T_3+T_4+0.5T_5}{5}.
 \]
 
-3. Use the finite difference method from Part II to numerically solve using \(q'''=750{,}000\) W/m³ until the volume-average temperature first reaches \(100^\circ C\). Use the same initial conditions, spatial grid, time step, and finite difference equations in both cases. Update all six nodal temperatures at every time step, using the current heat-generation rate in the source term.
+3. Use the finite difference method from Part II to numerically solve using \(q'''=750{,}000\) W/m³ until the volume-average temperature first reaches \(100^\circ C\). Use the same initial conditions, spatial grid, time step, and finite difference equations in both cases. Update all six nodal temperatures at every time step, using the current heat-generation rate in the source term. Show calculations.
 
-4. Report the time required for the case to reach the target, all six nodal temperatures near the target-crossing time, and the volume-average temperature. Show several initial iterations and the iterations immediately before and after the target is reached. Use interpolation between time steps when appropriate.
+4. Report the time required for the case to reach the target, all six nodal temperatures near the target-crossing time, and the volume-average temperature. Show several initial iterations and the iterations immediately before and after the target is reached. Show calculations. Use interpolation between time steps when appropriate. 
 
 5. Calculate the percentage reduction in heating time:
 \[
