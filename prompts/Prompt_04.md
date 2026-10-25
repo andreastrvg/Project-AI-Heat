@@ -26,23 +26,23 @@ Divide the plate into five equal intervals of 1 cm, resulting in six nodes.
 12. Present all results in a clear table.
 
 ### Part II. Transient Numerical Analysis of the Original Problem
-
+In each part, briefly explain the process and the purpose of the calculations.
 1. Extend the original problem from steady-state to transient heat conduction using the finite difference method.
 2. Identify the additional data required for transient analysis, including uranium density \(\rho\), specific heat \(c_p\), initial temperature distribution \(T(x,0)\), time-step size \(\Delta t\), and simulation duration.
 3. Do not invent missing material properties. Verify the previously used values \(\rho=19{,}050\) kg/m³ and \(c_p=116\) J/(kg·K) using reliable references.
 4. Since the original problem does not specify an initial temperature, explicitly assume a uniform initial temperature of \(30^\circ C\).
 5. Derive the transient heat conduction equation with uniform internal heat generation. Assume constant thermal properties unless otherwise justified.
-6. Derive the explicit finite difference equations for the interior nodes and both boundary nodes using consistent control-volume energy balances.
-7. Calculate thermal diffusivity, Fourier number, and Biot number. Select a stable time step and verify both interior-node and convective-boundary stability restrictions.
-8. Calculate the temperatures of all six nodes at successive time steps. Show calculation example and all results.
+6. Derive the explicit finite difference equations for the interior nodes and both boundary nodes using consistent control-volume energy balances. Show derivation of equations and calculations.
+7. Calculate thermal diffusivity, Fourier number, and Biot number. Select a stable time step and verify both interior-node and convective-boundary stability restrictions. Show all calculations.
+8. Calculate the temperatures of all six nodes at successive time steps. Show all necessary calculations and results.
 9. Use a volume-average plate temperature of (100^\circ C) as a comparison target for the transient simulations. Clearly state that this is an added benchmark to compare transient and , not a temperature specified by the textbook or the target final temperature.
-10. Calculate the time required for the original system, with (q'''=600{,}000) W/m³ throughout, to reach an average temperature of (100^\circ C). Show the nodal temperatures and average temperature near the target-crossing time. Show calculations.
+10. Calculate the time required for the original system, with (q'''=600{,}000) W/m³ throughout, to reach an average temperature of (100^\circ C). Show the nodal temperatures and average temperature near the target-crossing time. Show necessary calculations.
 11. Verify that the transient solution approaches the original analytical steady-state temperature profile. Define convergence as a maximum absolute nodal error of (1.0^\circ C) or less relative to the analytical steady-state temperatures. Show calculations.
 12. Perform a transient energy balance comparing stored energy with internal heat generation minus convective heat loss.
     
 ### Part III. Engineering Adaptation for Faster Heating
 
-Investigate whether temporarily increasing the internal heat-generation rate can reduce the heating time while preserving the original long-term steady-state condition.
+Investigate whether temporarily increasing the internal heat-generation rate can reduce the heating time while preserving the original long-term steady-state condition. In each part, briefly explain the process and the purpose of the calculations.
 
 1. Increase the heat-generation rate from \(600{,}000\) W/m³ to \(750{,}000\) W/m³ during startup. Keep the geometry, thermal properties, ambient temperature, convection coefficient, and boundary conditions unchanged.
 
