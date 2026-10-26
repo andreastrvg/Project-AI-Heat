@@ -1,0 +1,1 @@
+Include the whole complete and detailed process to solve the problem as if you were teaching a student how to solve the problem step by step. Make it more detailed then it already is in the response you just gave. Don't omit any steps of the process. 
